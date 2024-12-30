@@ -1,0 +1,515 @@
+/*
+Theme Name: THEME
+Theme URI: http://localhost:8888/wordpress-3/
+Author: Votre Nom
+Description: Thème pour le site Culture Connect.
+Version: 1.0
+Text Domain: culture-connect
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  header {
+    background: #2C3E50; 
+    color: #fff;
+    padding: 15px;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav {
+    flex: 1;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  
+  .highlight {
+    color: #F18F2F;
+  }
+  
+  .stories-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+   
+  .stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .stories-container .card {
+    width: calc(33.333% - 40px);
+    max-width: 400px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+  
+  .stories-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stories-container .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+    .stories-container .card-content {
+    background: #2C3E50;
+    color: white;
+    min-height: 150px;
+    padding: 15px;
+  }
+  .card-content h3 {
+    margin: 0; /* pour supprimer les marges du titre */
+    font-size: 20px; /* Taille du texte */
+    font-weight: bold;
+}
+.highlight {
+    background-color: orange;
+    color: white; /* Couleur du texte */
+    padding: 5px 70px; /* Espace intérieur */
+    border-radius: 2px; /* les Coins arrondis */
+  }
+  
+  /* LARGE IMAGE SECTION */
+  .large-image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 50px 0;
+  }
+  
+  /* CULTURE SECTION */
+  .culture-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .culture-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .culture-container .card {
+    width: calc(50% - 20px);
+    max-width: 500px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .culture-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .culture-container .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .culture-container .card-content {
+    background: #2C3E50;
+    color: white;
+    padding: 15px;
+  }
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Sur petits écrans, les cartes prennent toute la largeur */
+    }
+  }
+  /* Conteneur pour centrer le bouton */
+.culture-section-footer {
+  text-align: center; /* Centre le bouton horizontalement */
+  margin-top: 30px; /*  pour ajouter juste un espace au-dessus du bouton */
+}
+
+/* Style du bouton personnalisé */
+.btn-custom {
+  display: inline-block;
+  padding: 12px 25px; /* Taille du bouton */
+  font-size: 18px; /* Taille du texte */
+  font-weight: bold; /* Texte en gras */
+  color: #fff; /* Texte blanc */
+  background-color: #ff9800; /* Couleur orange */
+  border: none;
+  border-radius: 8px; /* Coins arrondis */
+  text-decoration: none; /* Pas de soulignement */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Animation fluide */
+}
+
+/* Couleur au survol */
+.btn-custom:hover {
+  background-color: #007bff; /* Bleu au survol */
+  color: #fff; /* Texte blanc au survol */
+}
+/* Apparence au clic */
+.btn-submit:active {
+  background-color: #0056b3; /* Couleur bleue foncée au clic */
+  transform: scale(0.98); /* Réduction légère de la taille */
+}
+
+  /* CONNECT SECTION */
+  .connect {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .connect h2 {
+    margin-bottom: 20px;
+  }
+  
+  .connect form {
+    display: inline-flex;
+    gap: 10px;
+  }
+  
+  .connect input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  
+  .connect button {
+    gap: 10px;
+    background: #F18F2F;
+    border: none;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #2C3E50; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative;
+  }
+  
+  .footer-line {
+    width: 90%;
+    height: 5px; 
+    background-color: #F18F2F; 
+    margin: 0 auto 10px;
+  }
+  
+  .footer-content p {
+    margin: 5px 0; 
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  footer a:hover {
+    color: #F18F2F;
+  }
+  
+  .social-links {
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+.conditions-section {
+  padding: 50px 20px;
+  background-color: white;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conditions-section h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 80%; /* Ajuste la largeur du trait */
+  height: 2px; /* Épaisseur du trait */
+  background-color: #ff9800; /* Couleur du trait */
+  margin: 10px auto 0; /* Espacement autour du trait */
+  border-radius: 1px; /* Arrondi léger */
+}
+.conditions-generales {
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Pour une meilleure lisibilité */
+  color: #333; /* Couleur du texte */
+}
+
+.conditions-generales h1 {
+  font-family: 'Roboto', sans-serif; /* Police spécifique pour le titre */
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #000; /* Couleur du titre */
+  margin-bottom: 20px;
+}
+/* Conteneur principal */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* --- FORMULAIRE --- */
+.review-form-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#review-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#review-form textarea,
+#review-form input,
+#review-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+/* Style du bouton personnalisé */
+.btn-custom {
+  display: inline-block;
+  padding: 12px 25px; /* Taille du bouton */
+  font-size: 18px; /* Taille du texte */
+  font-weight: bold; /* Texte en gras */
+  color: #fff; /* Texte blanc */
+  background-color: #ff9800; /* Couleur orange */
+  border: none;
+  border-radius: 8px; /* Coins arrondis */
+  text-decoration: none; /* Pas de soulignement */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Animation fluide */
+}
+
+/* Couleur au survol */
+.btn-custom:hover {
+  background-color: #007bff; /* Bleu au survol */
+  color: #fff; /* Texte blanc au survol */
+}
+/* Apparence au clic */
+.btn-submit:active {
+  background-color: #0056b3; /* Couleur bleue foncée au clic */
+  transform: scale(0.98); /* Réduction légère de la taille */
+}
+
+/* --- SECTION DES AVIS --- */
+/* Conteneur des avis */
+.carousel {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* Carte d'un avis */
+.review-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+}
+
+.review-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.review-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.review-item .role {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.review-item .comment {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+/* Conteneur principal */
+.reviews-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 50px;
+  background-color: white;
+}
+
+.reviews-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 70%;
+  max-width: 900px;
+}
+
+.review {
+  flex: 0 0 33.33%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.review p {
+  color: #555;
+  font-size: 14px;
+}
+
+.stars {
+  color: #ffa500;
+  font-size: 16px;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ffa500;
+  transform: scale(1.1);
+}
+
+.button.left {
+  left: 180px;
+}
+
+.button.right {
+  right: 180px;
+}
+
+
+
+
+
+
+
+
+
