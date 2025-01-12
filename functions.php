@@ -31,7 +31,7 @@ function mon_theme_assets() {
         get_template_directory_uri() . '/script.js', // Chemin vers le fichier script.js
         array(), 
         '1.0', // Version
-        true // Charger dans le footer
+        true 
     );
 }
 add_action('wp_enqueue_scripts', 'mon_theme_assets');
