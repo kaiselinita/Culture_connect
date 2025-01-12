@@ -20,7 +20,7 @@ function mon_theme_assets() {
     wp_enqueue_script(
         'bootstrap-js',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js',
-        array('jquery'), // Dépend de jQuery
+        array('jquery'), 
         null,
         true // Charger dans le footer
     );
