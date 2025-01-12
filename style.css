@@ -304,13 +304,13 @@ h1::after {
   display: block;
   width: 80%; /* Ajuste la largeur du trait */
   height: 2px; /* Épaisseur du trait */
-  background-color: #ff9800; /* Couleur du trait */
+  background-color: #ff9800; 
   margin: 10px auto 0; /* Espacement autour du trait */
   border-radius: 1px; /* Arrondi léger */
 }
 .conditions-generales {
   font-family: Arial, sans-serif;
-  line-height: 1.6; /* Pour une meilleure lisibilité */
+  line-height: 1.6; 
   color: #333; /* Couleur du texte */
 }
 
