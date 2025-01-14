@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <div class="header-container">
     <div class="logo">
+       <a href="<?php echo home_url(); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/images/logo du site.png" alt="Culture Connect Logo">
     </div>
     <nav>
