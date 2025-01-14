@@ -117,12 +117,7 @@ get_header(); ?>
             placeholder="Enter your email address" 
             required 
             style="max-width: 400px; border-radius: 20px; padding: 10px;">
-        <button 
-            type="submit" 
-            class="btn" 
-            style="background-color: #FF7900; color: white; border-radius: 20px; padding: 10px 20px;">
-            Subscribe
-        </button>
+            <button type="button" class="btn btn-primary">Subscribe</button>
     </form>
 </div>
 <?php
