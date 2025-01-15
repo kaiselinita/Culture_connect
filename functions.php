@@ -4,7 +4,7 @@ function mon_theme_assets() {
     wp_enqueue_style(
         'bootstrap',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css',
-        array(),
+        array(),//pas dependance  à mon css
         null
     );
 
@@ -29,7 +29,7 @@ function mon_theme_assets() {
     wp_enqueue_script(
         'mon-theme-script',
         get_template_directory_uri() . '/script.js', // Chemin vers le fichier script.js
-        array(), 
+        array(),//pas dependance il s'agit de mon script js
         '1.0', // Version
         true 
     );
